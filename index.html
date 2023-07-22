@@ -1,90 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta property="og:title" content="Noir | 保護猫カフェ">
+  <meta name="robots" content="noindex , nofollow" />
+  <title>Noir | 保護猫カフェ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
+  <!-- header -->
+  <header class="header-index">
+    <div class="gnav">
+      <nav class="nav">
+        <h1 class="h-logo"><a href="."><img src="img/noir.svg" alt="Noir"></a></h1>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="." class="nav__link"><span class="en">top</span><span class="ja">トップページへ</span></a></li>
+          <li class="nav__item"><a href="#concept" class="nav__link"><span class="en">concept</span><span class="ja">私たちについて</span></a></li>
+          <li class="nav__item"><a href="#profile" class="nav__link"><span class="en">profile</span><span class="ja">ねこ紹介</span></a></li>
+          <li class="nav__item"><a href="#shop-info" class="nav__link"><span class="en">shop info</span><span class="ja">店舗情報</span></a></li>
+          <li class="nav__item"><a href="#support" class="nav__link"><span class="en">support</span><span class="ja">支援について</span></a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link"><span class="en">contact</span><span class="ja">お問い合わせ</span></a></li>
+        </ul>
+        <a href="promise.html#zyoto" class="nav__link">里親をご検討中の方へ</a>
+        <a href="permit.html" class="nav__link">動物取扱業の表示</a>
+        <!-- instagram -->
+        <a href="https://about.instagram.com/ja-jp"><img src="img/insta-logo.svg" alt="インスタグラムへ" class="i-logo"></a>
+      </nav>
+      <button type="button" class="btn-menu js-btn-menu">
+        <span class="btn-menu__line"></span>
+      </button>
     </div>
   </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
+  <!-- mv -->
+  <div class="mv">
+    <img src="img/noir.svg" alt="" class="mv-logo">
   </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
+  <!-- main -->
+  <main>
+    <section class="concept" id="concept">
+      <div class="concept__inner">
+        <h2><span class="subtitle">私たちについて</span>concept</h2>
+        <h3>君も、ぼくも、しあわせに</h3>
+        <p>私たちは、人とねこの両方が<br class="sp-only">
+          しあわせになれるお手伝いをしています<br>
+          <br>
+          家にお迎えすることが難しい方も、<br class="sp-only">
+          里親希望の方も、まだお悩み中の方も、<br>
+          ぜひ Noir に遊びに来てください<br>
+          <br>
+          みなさまのご来店を、<br class="sp-only">
+          ねこ一同、心よりお待ちしております</p>
       </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
+    </section>
+    <section class="profile" id="profile">
+      <div class="container">
+        <h2><span class="subtitle">ねこ紹介</span>profile</h2>
+        <div class="member interval">
+          <h4>member</h4>
+          <p class="caption">Noirのねこをご紹介します</p>
+          <div class="slider">
+            <div class="slider__inner">
+              <div class="slider__item">
+                <img src="img/cat4.jpg" alt="猫紹介：ごま">
+                <p class="profile-name">ごま</p>
+                <span class="state wait">里親募集中</span>
+              </div>
+              <div class="slider__item">
+                <img src="img/cat5.jpg" alt="猫紹介：おこめ">
+                <p class="profile-name">おこめ</p>
+                <span class="state wait">里親募集中</span>
+              </div>
+              <div class="slider__item">
+                <img src="img/cat1.jpg" alt="猫紹介：おもち">
+                <p class="profile-name">おもち</p>
+                <span class="state trial">トライアル決定</span>
+              </div>
+              <div class="slider__item">
+                <img src="img/cat2.jpg" alt="猫紹介：ちゃちゃ">
+                <p class="profile-name">ちゃちゃ</p>
+                <span class="state trial">トライアル決定</span>
+              </div>
+            </div>
           </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
-          </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
-          </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
-          </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+        <div class="atmosphere interval">
+          <h4>atmosphere</h4>
+          <p class="caption">ねこたちの普段の様子です</p>
+          <ul class="atmosphere-slide__list">
+            <li><img src="img/atmosphere1.jpg" alt="" class="atmosphere-slide__item"></li>
+            <li><img src="img/atmosphere2.jpg" alt="" class="atmosphere-slide__item"></li>
+            <li><img src="img/atmosphere3.jpg" alt="" class="atmosphere-slide__item"></li>
+          </ul>
         </div>
       </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
+    </section>
+    <section class="shop-info" id="shop-info">
+      <div class="container">
+        <h2><span class="subtitle">店舗情報</span>shop info</h2>
+        <div class="access interval">
+          <table>
+            <tr><th>時間</th><td>10:00〜18:00</td></tr>
+            <tr><th>定休日</th><td>月曜日</td></tr>
+            <tr><th>料金</th><td>30分 / 500円</td></tr>
+            <tr><th>住所</th><td>京都市下京区東塩小路町901</td></tr>
+            <tr><th>電話</th><td>00-0000-0000</td></tr>
+          </table>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.8276170600557!2d135.75632521523985!3d34.98598238036222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108aec20777eb%3A0x6539b4715f808fb7!2z44CSNjAwLTgyMTYg5Lqs6YO95bqc5Lqs6YO95biC5LiL5Lqs5Yy65p2x5aGp5bCP6Lev55S677yZ77yQ77yR!5e0!3m2!1sja!2sjp!4v1686460869282!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
+      <div class="gallery interval">
+        <div class="gallery__inner">
+          <ul class="gallery__list">
+            <li><img src="img/gallery1.jpg" alt="店内写真1"></li>
+            <li><img src="img/gallery2.jpg" alt="店内写真2"></li>
+            <li><img src="img/gallery3.jpg" alt="店内写真3"></li>
+            <li><img src="img/gallery4.jpg" alt="店内写真4"></li>
+            <li><img src="img/gallery5.jpg" alt="店内写真5"></li>
+            <li><img src="img/gallery6.jpg" alt="店内写真6"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="support" id="support">
+      <div class="container">
+        <h2><span class="subtitle">支援について</span>support</h2>
+        <p>
+          いつもご支援、誠にありがとうございます<br>
+          <br>
+          頂いた物資は、<br>
+          Noirで暮らすねこたちのしあわせに繋がります
+        </p>
+        <a href="https://www.amazon.co.jp/?&tag=hydraamazonav-22&ref=pd_sl_2c5zl5vic2_e&adgrpid=58606622580&hvpone=&hvptwo=&hvadid=611274761955&hvpos=&hvnetw=g&hvrand=16463342808695001388&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009512&hvtargid=kwd-317468125601&hydadcr=27923_14587446" class="btn">Amazonへ</a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2><span class="subtitle">お問い合わせ</span>contact</h2>
+        <div class="contact__inner">
+          <p>
+            質問や相談、お気軽にお問い合わせください。<br>
+            <br>
+            里親をご検討中の方は、<br>
+            下記をご一読の上、お問い合わせください。
+          </p>
+          <p><a href="promise.html#" class="promise__link">里親をご検討中の方はこちらへ</a></p>
+          <a href="contact.html" class="btn" style="margin-top: 30px;">お問い合わせフォーム</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer clear">
+    <a href="https://about.instagram.com/ja-jp" class="sns__link"><img src="img/insta-logo__white.svg" alt="インスタグラムへ" class="sns__logo"></a>
+    <!-- <a href="" class="gnav__link-other">動物取扱業の表示</a> -->
+    <p class="copyright">&copy;Noir 2023</p>
   </footer>
+  <div class="page-top">
+    <a href="#" class="page-top__link"><i class="fa-solid fa-chevron-up"></i></a>
+  </div>
+  <a href="promise.html" class="c-fixed">Noirとのお約束</a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
