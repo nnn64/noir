@@ -406,11 +406,9 @@ iframe{
     z-index: 10;
     justify-content: center;
     align-items: center;
-    /* bottom: 0; */
     top: 0;
     right: 50px;
     width: 140px;
-    /* height: 45px; */
     height: 50px;
     background-color: var(--accent-color);
     font-size: 12px;
@@ -447,18 +445,11 @@ iframe{
   display: flex;
   width: 100%;
   height: 100%;
-  /* align-items: center; */
   justify-content: center;
-  /* box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .1); */
 }
 
 .shadow{
-  /* box-shadow: ; */
   box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
-}
-
-.gnav-logo{
-
 }
 
 .gnav-logo img{
@@ -544,7 +535,6 @@ iframe{
   height: 50px;
   border: none;
   padding: 10px;
-  /* background-color: rgba(255, 255, 255); */
   background-color: var(--main-color);
   cursor: pointer;
 }
@@ -559,7 +549,6 @@ iframe{
   content: "";
   width: 80%;
   height: 2px;
-  /* transition: ; */
   background-color: var(--accent-color);
 }
 
@@ -570,7 +559,6 @@ iframe{
   content: "";
   width: 100%;
   height: 100%;
-  /* transition: inherit; */
   background-color: inherit;
 }
 
@@ -605,10 +593,7 @@ iframe{
 
 @media (min-width:768px) {
   .header{
-    /* display: flex; */
     position: fixed;
-    /* align-items: center; */
-    /* justify-content: space-between; */
     width: 100%;
     height: 50px;
     z-index: 10;
@@ -627,12 +612,6 @@ iframe{
     height: 45px;
   }
   
-  .gnav-logo img{
-    /* width: 70px; */
-    /* height: auto; */
-    /* vertical-align: unset; */
-  }
-  
   .nav{
     position: fixed;
     top: 0;
@@ -647,7 +626,6 @@ iframe{
     padding: 0 100px;
     background-color: #fff;
     border-left: 1px solid var(--main-color);
-    /* transition: opacity 0.3s ease; */
     visibility: hidden;
     opacity: 0;
   }
@@ -722,7 +700,6 @@ iframe{
     content: "";
     width: 80%;
     height: 2px;
-    /* transition: ; */
     background-color: var(--accent-color);
   }
   
@@ -733,7 +710,6 @@ iframe{
     content: "";
     width: 100%;
     height: 100%;
-    /* transition: inherit; */
     background-color: inherit;
   }
   
@@ -796,12 +772,10 @@ iframe{
     background-image: url(../img/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center bottom; */
     background-position: center 68%;
   }
   
   .mv-logo{
-    /* position: absolute; */
     width: 269px;
     height: auto;
     top: 20%;
@@ -825,18 +799,9 @@ iframe{
   padding: 70px 0px;
 }
 
-@media (min-width:768px) {
-  
-}
-
 /* --------------------
 　猫紹介
 -------------------- */
-.profile{
-  /* margin: 0 auto;
-  text-align: center; */
-}
-
 .slider{
   width: 100%;
   text-align: center;
@@ -850,18 +815,6 @@ iframe{
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
-
-/* .slider__inner::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-.slider__inner::-webkit-scrollbar-thumb {
-  background: var(--main-color);
-  border-radius: 10px;
-}
-.slider__inner::-webkit-scrollbar-track {
-  background: transparent;
-} */
 
 .slider__item{
   scroll-snap-align: start;
@@ -889,7 +842,6 @@ iframe{
 }
 
 .profile-name{
-  /* font-size: 16px; */
   font-weight: bold;
 }
 
@@ -935,7 +887,6 @@ iframe{
 @media (min-width:768px) {
   .profile{
     margin: 0 auto;
-    /* max-width: 800px; */
   }
 
   .atmosphere-slide__list{
@@ -948,11 +899,6 @@ iframe{
 /* --------------------
 　店舗情報
 -------------------- */
-.shop-info{
-  /* text-align: center;
-  margin: 0 auto; */
-}
-
 .access{
   display: flex;
   flex-direction: column;
@@ -969,7 +915,6 @@ iframe{
 
 @media (min-width:768px) {
   .access{
-    /* max-width: 800px; */
     margin: 0 auto 140px auto;
     flex-direction: row;
     align-items: center;
@@ -1074,10 +1019,8 @@ iframe{
   .footer{
     position: relative;
     width: 100%;
-    /* height: 150px; */
     height: 250px;
     background-color: var(--main-color);
-    /* margin-bottom: 45px; */
     margin-bottom: 0;
   }
   
@@ -1120,13 +1063,9 @@ iframe{
 .intro__item{
   position: relative;
   margin-left: 20px;
-  /* padding-left: 20px; */
-  /* list-style: disc; */
-  /* list-style-position: outside; */
 }
 
 .intro__item::before{
-  /* display: inline-block; */
   position: absolute;
   left: -20px;
   top: 8px;
@@ -1143,7 +1082,6 @@ iframe{
 }
 
 .zyoto-rule{
-  /* margin-left: 20px; */
   margin-top: 50px;
   padding: 50px 20px;
   border: 1px solid #C9C9C9;
@@ -1160,9 +1098,6 @@ iframe{
   margin-left: 20px;
   padding-left: 8px;
   padding-bottom: 20px;
-  /* list-style-type: decimal; */
-  /* list-style-position: outside; */
-  /* font-weight: normal; */
 }
 
 .zyoto__item::before{
@@ -1173,7 +1108,6 @@ iframe{
   top: 3px;
   font-size: 16px;
   line-height: 1;
-  /* color: ; */
 }
 
 .outside-btn{
@@ -1202,13 +1136,9 @@ iframe{
   .intro__item{
     position: relative;
     margin-left: 20px;
-    /* padding-left: 20px; */
-    /* list-style: disc; */
-    /* list-style-position: outside; */
   }
 
   .intro__item::before{
-    /* display: inline-block; */
     position: absolute;
     left: -20px;
     top: 8px;
@@ -1225,7 +1155,6 @@ iframe{
   }
 
   .zyoto-rule{
-    /* margin-left: 20px; */
     margin-top: 50px;
     padding: 75px 50px;
     border: 1px solid #C9C9C9;
@@ -1242,9 +1171,6 @@ iframe{
     margin-left: 20px;
     padding-left: 8px;
     padding-bottom: 20px;
-    /* list-style-type: decimal; */
-    /* list-style-position: outside; */
-    /* font-weight: normal; */
   }
 
   .zyoto__item::before{
@@ -1255,7 +1181,6 @@ iframe{
     top: 3px;
     font-size: 16px;
     line-height: 1;
-    /* color: ; */
   }
 
   .outside-btn{
@@ -1327,11 +1252,9 @@ iframe{
 }
 
 .require{
-  /* position: absolute; */
   color: var(--accent-color);
   font-size: 10px;
   padding-left: 5px;
-  /* top: 0; */
 }
 
 .form__item:not(:last-child){
@@ -1356,7 +1279,6 @@ iframe{
   position: relative;
   border: 1px solid #ccc;
   border-radius: 10px;
-  /* width: calc(100% - 20px); */
   width: 100%;
   height: 50px;
   padding: 0 20px;
@@ -1388,21 +1310,20 @@ iframe{
 }
 
 @media (min-width:768px) {
-.contact__intro,
-.contact__form,
-.contact-send{
-  margin-top: 10px;
-  text-align: left;
-}
+  .contact__intro,
+  .contact__form,
+  .contact-send{
+    margin-top: 10px;
+    text-align: left;
+  }
 
-.contact__intro p,
-.contact__form p,
-.contact-send{
-  text-align: center;
-}
+  .contact__intro p,
+  .contact__form p,
+  .contact-send{
+    text-align: center;
+  }
 
   .form{
-    /* margin: 50px 20px 0 20px; */
     margin: 0 auto;
     margin: 50px auto 0 auto;
     max-width: 600px;
@@ -1414,11 +1335,9 @@ iframe{
   }
 
   .require{
-    /* position: absolute; */
     color: var(--accent-color);
     font-size: 10px;
     padding-left: 5px;
-    /* top: 0; */
   }
 
   .form__item:not(:last-child){
@@ -1428,7 +1347,6 @@ iframe{
   .form__input{
     border: 1px solid #ccc;
     border-radius: 10px;
-    /* width: calc(100% - 20px); */
     width: 500px;
     height: 50px;
     padding-left: 20px;
@@ -1444,7 +1362,6 @@ iframe{
     position: relative;
     border: 1px solid #ccc;
     border-radius: 10px;
-    /* width: calc(100% - 20px); */
     width: 100%;
     height: 50px;
     padding: 0 20px;
